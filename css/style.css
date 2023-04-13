@@ -12,10 +12,11 @@ p {
 
 .calculator {
   position: relative;
-  margin: 1em auto;
+  margin: 3em auto;
   padding: 1em 0;
   display: block-inline;
   width: 350px;
+  height: 490px;
   background-color: #cccccc;
   border-radius: 25px;
   box-shadow: 5px 5px 15px 3px #111;
@@ -30,6 +31,7 @@ p {
   font-family: Droid Sans Mono;
   display: table;
   width: 85%;
+  height: 80px;
   background-color: #fbf7f5;
   text-align: right;
   font-size: 2em;
@@ -41,7 +43,7 @@ p {
 }
 
 .calc-row div {
-  text-align: center;
+  /*text-align: center;
   display: inline-block;
   font-weight: bold;
   border: 1px solid #555;
@@ -50,7 +52,20 @@ p {
   margin: 7px 5px;
   border-radius: 15px;
   box-shadow: 2px 2px 1px 1px #222;
+  width: 50px;*/
+  text-align: center;
+  display: inline-block;
   width: 50px;
+	height: 50px;
+  padding: 5px 0;
+	margin: 7px 5px;
+	border-radius: 15px;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 20px;
+  color: white;
+  background-color: #454444;
+  box-shadow: 2px 2px 8px 0 #111;
 }
 
 .calc-row div.zero {
@@ -59,4 +74,12 @@ p {
 
 .calc-row div.zero {
   margin-right: 5px;
+}
+
+.calc-row div.clear, div.backspace, div.back {
+  background-color: #20b2aa;
+}
+
+.calc-row div.plus-minus, div.percent, div.divice, div.root, div.multiply, div.inverse, div.pi, div.equal, div.addition, div.subtraction {
+  background-color: #f64307;
 }
